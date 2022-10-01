@@ -183,14 +183,82 @@ p{
 .footer{
     grid-area: footer;
 }
+#ubicanos h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 3rem 0rem 1rem 1rem;
+    font-family: 'Marcellus', serif;
+}
+#ubicanos iframe{
+    text-align: center;
+    width: 1260px;
+    height: 300px;
+    padding: 0rem 1rem;
+}
+#ubicanos p{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1.5rem 2rem;
+}
+.linea {
+    border-bottom: solid 2px #157A8A;
+    max-width: 1050px;
+    margin: 10px auto 0 auto
+}
+#opiniones{
+    background:linear-gradient(rgb(39, 37, 37) 50%,#FFFEFC 50%);
+    color: #FFFEFC;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+.opiniones-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.opiniones-fondo{
+    background:linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+    text-align:left;
+    padding: 2rem 2rem;
+    border-radius: 3px;
+    color: var(--blanco);
+    font-size: 0.7rem;
+    margin: 2px;
+    width: 365px;
+    height: 190px;
+}
+.Cabecero-opiniones{
+    display: flex;  
+}
+.fa-regular{
+    color: #9C2759;
+}
+.Cabecero-opiniones img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    flex-basis:20%;
+}
+.Cabecero-opiniones h4{
+    flex-basis: 80%;
+    text-align:left;
+    font-size: 1rem;
+    padding: 0rem 0rem 0rem 2rem;
+}
 
 /*punto de quiebre en movile*/
 
 @media  screen and (min-width: 320px) {
-  
+  body{
+    background-color: crimson;
+  }
 }
 /*Punto quiebre media querie tabletas*/
 @media screen and (min-width: 768px){
+    body{
+        background-color: aqua;
+    }
     header{
     grid-template-rows: auto 1fr 1fr;
         grid-template-columns: 1fr 4fr 1fr;
@@ -206,6 +274,9 @@ p{
 
 /*Punto de quiebre media querie notebook*/
 @media screen and (min-width: 1024px){
+    body{
+        background-color: #9C2759;
+    }
     header{
         display: flex;
         justify-content: space-between;
